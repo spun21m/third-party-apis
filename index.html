@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PocketArticle</title>
+    <style>
+      body {
+        margin: auto 300px;
+        max-width: 900px;
+      }
+      h1 {
+        margin-top: 40px;
+        text-align: center;
+      }
+      fieldset {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      label {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      input[type="text"] {
+        margin-right: 30px;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        flex: 1;
+      }
+      button {
+        margin: 0 auto;
+        margin-right: 30px;
+        padding: 10px 40px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        background: rgb(211, 209, 209);
+        font-size: 18px;
+      }
+      button:hover {
+        background-color: #d7e1ec;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Save article to Pocket!</h1>
+    <form action="find_article" method="get">
+      <fieldset>
+        <legend>Search Kewords for article</legend>
+        <label for="article">Article Search</label>
+        <input
+          type="text"
+          id="article"
+          name="article"
+          placeholder="Enter keywords or topic..."
+        />
+        <button type="submit">Search</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
